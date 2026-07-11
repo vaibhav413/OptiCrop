@@ -1,0 +1,270 @@
+/* ==========================
+   FarmIQ - Modern UI
+========================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#f4f8f4;
+    color:#222;
+}
+
+/* Navbar */
+
+.navbar{
+    background:#2E7D32;
+    padding:15px 0;
+    transition:.3s;
+}
+
+.navbar-brand{
+    font-size:1.7rem;
+    font-weight:700;
+}
+
+.nav-link{
+    color:white!important;
+    margin-left:15px;
+    font-weight:500;
+}
+
+.nav-link:hover{
+    color:#C8E6C9!important;
+}
+
+/* Hero */
+
+.hero{
+    padding-top:130px;
+    padding-bottom:80px;
+    background:linear-gradient(135deg,#E8F5E9,#ffffff);
+}
+
+.hero h1{
+    font-size:3rem;
+    font-weight:700;
+    color:#1B5E20;
+}
+
+.hero p{
+    font-size:1.1rem;
+    color:#555;
+    line-height:1.8;
+}
+
+.hero-image{
+    border-radius:25px;
+    transition:.4s;
+    max-height:450px;
+}
+
+.hero-image:hover{
+    transform:scale(1.03);
+}
+
+/* Buttons */
+
+.btn-success{
+    background:#2E7D32;
+    border:none;
+    border-radius:12px;
+    padding:12px 28px;
+    font-weight:600;
+}
+
+.btn-success:hover{
+    background:#1B5E20;
+    transform:translateY(-2px);
+}
+
+/* Prediction */
+
+.prediction-section{
+    padding:80px 0;
+}
+
+.prediction-card{
+    border:none;
+    border-radius:20px;
+    background:white;
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+}
+
+.form-control{
+    border-radius:12px;
+    border:1px solid #ddd;
+    padding:12px;
+}
+
+.form-control:focus{
+    border-color:#2E7D32;
+    box-shadow:0 0 0 .15rem rgba(46,125,50,.2);
+}
+
+.form-label{
+    font-weight:600;
+    margin-bottom:8px;
+}
+
+/* Features */
+
+.feature-card{
+    background:white;
+    border-radius:18px;
+    transition:.3s;
+    height:100%;
+    box-shadow:0 6px 20px rgba(0,0,0,.05);
+}
+
+.feature-card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 12px 25px rgba(0,0,0,.12);
+}
+
+/* Footer */
+
+.footer{
+    background:#1B5E20;
+    color:white;
+    padding:60px 0;
+}
+
+.footer a{
+    color:#ddd;
+    text-decoration:none;
+}
+
+.footer a:hover{
+    color:white;
+}
+
+.social-icons i{
+    font-size:1.5rem;
+    margin-right:15px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.social-icons i:hover{
+    color:#C8E6C9;
+}
+
+/* Loading */
+
+#loader{
+    position:fixed;
+    inset:0;
+    display:none;
+    justify-content:center;
+    align-items:center;
+    background:rgba(255,255,255,.75);
+    z-index:9999;
+}
+
+/* Responsive */
+
+@media(max-width:992px){
+
+.hero{
+text-align:center;
+}
+
+.hero h1{
+font-size:2.3rem;
+}
+
+.hero-image{
+margin-top:40px;
+}
+
+}
+
+@media(max-width:768px){
+
+.prediction-card{
+padding:10px;
+}
+
+.hero{
+padding-top:110px;
+}
+
+.hero h1{
+font-size:2rem;
+}
+
+}/* ===============================
+   RESULT PAGE
+================================= */
+
+.progress{
+    height:22px;
+    border-radius:20px;
+    overflow:hidden;
+    background:#e9ecef;
+}
+
+.progress-bar{
+    font-weight:600;
+    font-size:14px;
+    line-height:22px;
+}
+
+.card{
+    border-radius:16px;
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+    box-shadow:0 12px 25px rgba(0,0,0,.12);
+}
+
+.alert{
+    border-radius:12px;
+}
+
+.prediction-card h1{
+    color:#2E7D32;
+}
+
+.feature-card h2{
+    font-weight:700;
+}
+
+.feature-card p{
+    color:#666;
+}
+
+/* Smooth animation */
+
+.feature-card,
+.card,
+.prediction-card{
+    animation:fadeUp .8s ease;
+}
+
+@keyframes fadeUp{
+
+0%{
+opacity:0;
+transform:translateY(25px);
+}
+
+100%{
+opacity:1;
+transform:translateY(0);
+}
+
+}

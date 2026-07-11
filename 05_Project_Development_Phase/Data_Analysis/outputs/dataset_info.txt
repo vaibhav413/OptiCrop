@@ -1,0 +1,15 @@
+<class 'pandas.DataFrame'>
+RangeIndex: 2200 entries, 0 to 2199
+Data columns (total 8 columns):
+ #   Column       Non-Null Count  Dtype  
+---  ------       --------------  -----  
+ 0   N            2200 non-null   int64  
+ 1   P            2200 non-null   int64  
+ 2   K            2200 non-null   int64  
+ 3   temperature  2200 non-null   float64
+ 4   humidity     2200 non-null   float64
+ 5   ph           2200 non-null   float64
+ 6   rainfall     2200 non-null   float64
+ 7   label        2200 non-null   str    
+dtypes: float64(4), int64(3), str(1)
+memory usage: 137.6 KB

@@ -1,0 +1,7 @@
+OptiCrop Dataset Summary
+=======================
+Records: 2200
+Features: 8
+Crop classes: 22
+Missing values: 0
+Duplicate rows: 0

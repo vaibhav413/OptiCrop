@@ -1,0 +1,37 @@
+OptiCrop Data Preprocessing Report
+======================================
+1. Summary of Records:
+   - Total Original Records: 2200
+   - Total Cleaned Records : 1768
+   - Total Features        : 9
+
+2. Missing Values:
+   - Total Missing Values Identified: 0
+   - Action Taken: Imputed with column median (for numerical columns if any)
+
+3. Duplicate Rows:
+   - Total Duplicate Rows Found: 0
+   - Action Taken: Removed duplicate records
+
+4. Outliers Removed (IQR Method):
+   - Outliers detected per feature:
+     * N: 0
+     * P: 138
+     * K: 200
+     * temperature: 86
+     * humidity: 30
+     * ph: 57
+     * rainfall: 100
+   - Total Unique Rows Removed as Outliers: 432
+
+5. New Features Added:
+   - Feature Name: Season
+   - Details: Created from 'temperature' column:
+     * Temperature < 20: Winter
+     * Temperature between 20 and 30: Monsoon
+     * Temperature > 30: Summer
+
+6. Dataset Splits:
+   - Training Set Size (80%): 1414 records
+   - Testing Set Size (20%) : 354 records
+   - Split Parameters: test_size = 0.2, random_state = 42

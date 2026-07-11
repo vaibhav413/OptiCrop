@@ -1,0 +1,9 @@
+Dataset Validation Report
+========================
+Number of records: 2200
+Number of features: 8
+Feature names: ['N', 'P', 'K', 'temperature', 'humidity', 'ph', 'rainfall', 'label']
+Numerical columns: ['N', 'P', 'K', 'temperature', 'humidity', 'ph', 'rainfall']
+Categorical columns: ['label']
+Duplicate rows: 0
+Unique labels: ['apple', 'banana', 'blackgram', 'chickpea', 'coconut', 'coffee', 'cotton', 'grapes', 'jute', 'kidneybeans', 'lentil', 'maize', 'mango', 'mothbeans', 'mungbean', 'muskmelon', 'orange', 'papaya', 'pigeonpeas', 'pomegranate', 'rice', 'watermelon']
